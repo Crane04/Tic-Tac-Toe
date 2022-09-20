@@ -195,5 +195,26 @@ i.fa-chevron-left{
         cursor: pointer;
         font-family: cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    .popup{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: transparent;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        display: none;
+    }
+    .pop-container{
+        background-color: white;
+        height: 200px;
+        border-radius: 5px;
+        width: 70%;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);
+        text-align: center;
+        font-family:cursive ;
+        padding: 15px;
+    
+    }
 }
 
