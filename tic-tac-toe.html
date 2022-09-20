@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="game-page">
+
+            <i class="fa fa-question" aria-hidden="true"></i><br><br><br><br><br>
+            <div class="popup">
+                <div class="pop-container">
+                    <p>Player <span></span> won this round</p>
+                    <div class="buttons">
+                        <button onclick="proceed()">Continue</button>
+                        <button onclick="start()">Start Again</button>
+                    </div>
+                </div>
+            </div>
+            <h2>Tic-Tac-Toe</h2>
+            <h3 style="color:red">Hint: O's Turn</h3>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table> 
+                
+            </div>
+            <div class="scoresheet">
+                <u>Scoresheet</u>
+                <p>O: <span id="p1">0</span></p>
+                <p>X: <span id="p2">0</span></p>
+            </div>
+         </div>   
+
+         <div class="settings">
+            
+            <i class="fa fa-chevron-left" aria-hidden="true"> </i><br><br><br><br><br>
+            <div class="settings-options">
+
+                <h2>About the Game</h2>
+            <article>
+                Tic-Tac-Toe, popularly knowns as X and O is a game...played by Two individuals. <br>
+                The game can be played on Paper, Boards or on a Device just like this one. <br> The game is played on a 3 by 3 squared grid(s).
+            </article>
+            <h2>How to Play</h2>
+            <article>
+                The two players will decide on who will be Player O or Player X; <br>
+                The first player to up to 3 marks in a row i.e up, down, across or diagonally is the winner. <br>
+                If all boxes are filled and no player wins; The game will end in a tie(draw)!
+
+            </article>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+body{       
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-top: -120px;
+}
+table{
+    height: 300px;
+    width: 300px;
+}
+tr{
+    
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2,h3{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.game-page,.settings{
+    background-color: #ddd;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,100,.6);
+    margin-right: 10px;
+}
+.scoresheet{
+    text-align: center;
+    margin-top: -45px;
+    font-family: cursive;
+}
+.scoresheet p,u{
+    font-size: larger;
+}
+.scoresheet p span#p1{
+    color: red;
+}
+.scoresheet p span#p2{
+    color: blue;
+}
+.red-wins{
+    background-color: red;
+    color: white !important;
+}
+.blue-wins{
+    background-color: blue;
+    color: white !important;
+}
+
+.popup{
+    display: flex;
+    position: fixed;
+    width: 50%;
+    background-color: transparent;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    display: none;
+}
+.pop-container{
+    background-color: white;
+    height: 200px;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);
+    text-align: center;
+    font-family:cursive ;
+    padding: 15px;
+
+}
+.pop-container p{
+    margin-top: 45px;
+}
+.pop-container button{
+    margin-top: 15px;
+    color: black;
+    background-color: #eee;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.pop-container button:hover:hover{
+    background-color: #ddd;
+}
+
+.settings{
+    text-align: center;
+    padding:8px ;
+    font-family:  cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.settings-options{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+i.fa-question{
+    display: none;
+}
+i.fa-chevron-left{
+    display: none;
+}
+@media(max-width:750px){
+    body{
+        background-color: #ddd;
+    }
+    .settings{
+        display: none;
+    }
+    .game-page,.settings{
+        background-color: #ddd;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow:none;
+        margin-right: 0px;
+    }
+ 
+    i.fa-question{
+        float: right;
+        margin: 15px;
+        font-size:40px;
+        color: blue ;
+        cursor: pointer;
+        border: 3px solid blue;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        display: flex;
+        margin-bottom: -400px;
+    }
+    i.fa-question:hover{
+        color: rgba(0,0,100,.6);
+        border: 3px solid rgba(0,0,100,.6);
+    }
+    i.fa-chevron-left{
+        display: block;
+        color: black;
+        float: left;
+        margin: 15px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        font-size:40px;
+    }
+    i.fa-chevron-left:hover{
+        color:rgba(0,0,0,.6);
+    }
+    .table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+        margin-top: -50px;
+
+    }
+    table{
+        height: 250px;
+        width: 250px;
+    }
+    .game-page h2{
+        margin-top: -50px;
+    }
+    td{
+        border: 1px solid black;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 50px;
+        cursor: pointer;
+        font-family: cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
