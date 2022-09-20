@@ -41,9 +41,12 @@ h2,h3{
     box-shadow: 1px 1px 1px 1px rgba(0,0,100,.6);
     margin-right: 10px;
 }
+.game-page h2{
+    margin-top: -40px;
+}
 .scoresheet{
     text-align: center;
-    margin-top: -45px;
+    margin-top: -85px;
     font-family: cursive;
 }
 .scoresheet p,u{
@@ -218,3 +221,6 @@ i.fa-chevron-left{
     }
 }
 
+u{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
