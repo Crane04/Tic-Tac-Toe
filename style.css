@@ -46,7 +46,6 @@ h2,h3{
 }
 .scoresheet{
     text-align: center;
-    margin-top: -85px;
     font-family: cursive;
 }
 .scoresheet p,u{
@@ -104,7 +103,7 @@ h2,h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
-.pop-container button:hover:hover{
+.pop-container button:hover{
     background-color: #ddd;
 }
 
@@ -177,9 +176,8 @@ i.fa-chevron-left{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 65vh;
-        margin-top: -50px;
-
+        height: fit-content;
+        margin-top: 0px;
     }
     table{
         height: 250px;
@@ -192,11 +190,6 @@ i.fa-chevron-left{
         border: 1px solid black;
         width: 75px;
         height: 75px;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 50px;
-        cursor: pointer;
-        font-family: cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .popup{
         display: flex;
@@ -218,6 +211,9 @@ i.fa-chevron-left{
         font-family:cursive ;
         padding: 15px;
     
+    }
+    .game-page h2{
+        margin-top: 0px;
     }
 }
 
