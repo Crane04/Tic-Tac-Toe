@@ -57,7 +57,7 @@ for(let i=0; i<td.length; i++){
             popup.style.display="flex"
      
         }
-       else if(td[0].innerText==="O"&&td[1].innerText==="O"&&td[2].innerText==="O"){
+       if(td[0].innerText==="O"&&td[1].innerText==="O"&&td[2].innerText==="O"){
             pOne++
             localStorage.setItem("player1",pOne)
             p1.innerText=pOne
