@@ -8,15 +8,15 @@ const total=document.querySelector("#total")
 const p2=document.querySelector("#p2")
 
 let nTotal=0
-let pTwo=0
+let playerScore=0
 
 nTotal=localStorage.getItem("nTotal")
-pTwo=localStorage.getItem("player2")
+playerScore=localStorage.getItem("playerInfo")
 if(nTotal){
 total.innerText=nTotal
 }
-if(pTwo){
-p2.innerText=pTwo
+if(playerScore){
+p2.innerText=playerScore
 }
 about.addEventListener("click", function(){
 document.querySelector(".game-page").style.display="none"
@@ -100,9 +100,9 @@ if((td[0].innerText==="X"&&td[1].innerText==="X"&&td[2].innerText==="X") ||
 (td[2].innerText==="X"&&td[4].innerText==="X"&&td[6].innerText==="X")
 
 ){
-pTwo++
-localStorage.setItem("player2",pTwo)
-p2.innerText=pTwo
+playerScore++
+localStorage.setItem("playerInfo",playerScore)
+p2.innerText=playerScore
 h3.style.visibility="hidden"
 popup.style.display = "flex"
 
