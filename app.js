@@ -7,6 +7,7 @@ const back=document.querySelector("i.fa-chevron-left")
 const total=document.querySelector("#total")
 const p2=document.querySelector("#p2")
 
+turns = 0
 let nTotal=0
 let playerScore=0
 
@@ -53,6 +54,7 @@ let x = setInterval(() => {
     td[goIndex].style.color ="red"
     
     check_O()
+    draw()
 }, 500);
 }
 ;
@@ -63,7 +65,9 @@ if (play_first == 0){
 h3.innerText = "Your Turn"
 }else{
 c_plays()
+draw()
 h3.innerText = "Computer's Turn,Thinking..."
+
 }
 }
 game()
@@ -79,6 +83,7 @@ if((td[0].innerText==="O"&&td[1].innerText==="O"&&td[2].innerText==="O") ||
 
 ){
 h3.style.visibility="hidden"
+document.querySelectorAll(".pop-container p")[1].style.display="block"
 winner.innerText="O"
 popup.style.display = "flex"
 }
@@ -103,11 +108,11 @@ if((td[0].innerText==="X"&&td[1].innerText==="X"&&td[2].innerText==="X") ||
 playerScore++
 localStorage.setItem("playerInfo",playerScore)
 p2.innerText=playerScore
+document.querySelectorAll(".pop-container p")[1].style.display="block"
 h3.style.visibility="hidden"
 popup.style.display = "flex"
 
 winner.innerText="X"
-popup.style.display="flex"
 }
 else{
 c_plays()
@@ -122,11 +127,19 @@ location.reload()
 }
 function start(){
 
-if (confirm("Are you sure you want to quit the game?")) {
+if (confirm("Are you sure you want to restart the game?")) {
             
 localStorage.clear()
 proceed()
 } else {
     proceed()
 }
+}
+
+function draw(){
+    if(td[0].innerText!=""&&td[1].innerText!=""&&td[2].innerText!=""&&td[3].innerText!=""&&td[4].innerText!=""&&td[5].innerText!=""&&td[6].innerText!=""&&td[7].innerText!=""&&td[8].innerText!=""){
+        h3.style.visibility="hidden"
+        popup.style.display = "flex"
+        document.querySelectorAll(".pop-container p")[0].style.display="block"
+    }
 }
