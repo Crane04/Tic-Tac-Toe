@@ -32,7 +32,6 @@ if(pTwo){
 }
 let turns=0
 for(let i=0; i<td.length; i++){
-    td[i]=false
     td[i].addEventListener("click", function(){
         if(td[i].innerText==="O"||td[i].innerText==="X"){
             h3.innerText="Hint: Choose another box!"

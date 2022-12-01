@@ -27,7 +27,25 @@ td{
     cursor: pointer;
     font-family: cursive,'Comic Sans MS', 'Comic Sans', 'Apple Chancery','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+#total{
+    color:red;
+}
+footer{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:10px;
+}
+figure img{
+    width:70px;
+    height:70px;
+}
+figure{
+    width:70px;
+    height:70px;
+    margin:5px
+}
 h2,h3{
     text-align: center;
 }
@@ -47,6 +65,7 @@ h2,h3{
 .scoresheet{
     text-align: center;
     font-family: cursive;
+    margin-top: -100px;
 }
 .scoresheet p,u{
     font-size: larger;
@@ -215,6 +234,10 @@ i.fa-chevron-left{
     }
     .game-page h2{
         margin-top: 0px;
+    }
+    .scoresheet{
+
+        margin-top: 40px;
     }
 }
 
