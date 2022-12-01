@@ -7,11 +7,11 @@ const back=document.querySelector("i.fa-chevron-left")
 const total=document.querySelector("#total")
 const p2=document.querySelector("#p2")
 
-turns = 0
+
 let nTotal=0
 let playerScore=0
 
-nTotal=localStorage.getItem("nTotal")
+nTotal=localStorage.getItem("ticTotal")
 playerScore=localStorage.getItem("playerInfo")
 if(nTotal){
 total.innerText=nTotal
@@ -121,7 +121,7 @@ h3.style.color="blue"
 }
 function proceed(){
 nTotal++
-localStorage.setItem("nTotal",nTotal)
+localStorage.setItem("ticTotal",nTotal)
 total.innerText=nTotal
 location.reload()
 }
@@ -130,7 +130,8 @@ function start(){
 if (confirm("Are you sure you want to restart the game?")) {
             
 localStorage.clear()
-proceed()
+localStorage.setItem("ticTotal",0)
+location.reload()
 } else {
     proceed()
 }
